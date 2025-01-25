@@ -60,7 +60,7 @@ const Sponsorship: React.FC = () => {
                 alt={sponsor.alt}
                 width={80}
                 height={40}
-                className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                className="p-4 rounded-lg shadow-md flex items-center justify-center hover:scale-105 transition-transform duration-300"
               />
             </motion.div>
           ))}
@@ -68,7 +68,7 @@ const Sponsorship: React.FC = () => {
       </motion.div>
 
       <motion.div
-        className="text-center"
+        className="text-center w-[80%] mx-auto"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
