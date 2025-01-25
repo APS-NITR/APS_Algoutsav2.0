@@ -21,6 +21,37 @@ export default function Navbar() {
             className="mx-2 md:mx-10"
           />
 
+          {/* Desktop Navigation Options */}
+          <div className="hidden md:flex space-x-6">
+            <Link href="#about" legacyBehavior>
+              <a className="text-white hover:text-blue-500">About AU</a>
+            </Link>
+            <a
+              href="#"
+              className="text-white hover:text-blue-500"
+            >
+              Stats 2024
+            </a>
+            <a
+              href="#sponsers"
+              className="text-white hover:text-blue-500"
+            >
+              Sponsers
+            </a>
+            <a
+              href="#gallery"
+              className="text-white hover:text-blue-500"
+            >
+              Gallery
+            </a>
+            <a
+              href="#"
+              className="text-white hover:text-blue-500"
+            >
+              FAQs
+            </a>
+          </div>
+
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
               type="button"
@@ -28,6 +59,7 @@ export default function Navbar() {
             >
               Sign in
             </button>
+
             {/* Hamburger Menu for Mobile */}
             <div className="md:hidden">
               <Hamburger
