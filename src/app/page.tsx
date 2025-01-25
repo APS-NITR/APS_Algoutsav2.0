@@ -1,5 +1,5 @@
 "use client"
-import Hero from "@/components/hero/hero";
+import Hero from "@/components/nupur/hero/hero";
 export default function Home() {
   return (
    <>
