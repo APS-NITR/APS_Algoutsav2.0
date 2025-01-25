@@ -64,6 +64,7 @@ const Gallery: React.FC = () => {
 
   return (
     <div id="gallery" className="flex flex-col items-center justify-center mt-28 mx-5">
+      <h1 className="mb-10 text-4xl font-bold tracking-tight text-white">Gallery</h1>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4 mx-auto" style={{ width: "80%" }}>
         {images.map((column, colIndex) => (
           <div key={colIndex} className="grid gap-4">
