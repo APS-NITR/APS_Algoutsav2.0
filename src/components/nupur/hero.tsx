@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 export default function Hero() {
     return (
-        <>
+        <div className="flex flex-col items-center justify-center ">
          
          <div className="
    flex flex-col items-center justify-center mt-60 mx-5 ">
@@ -45,6 +45,6 @@ Register Now
 </button></a>
   
 </motion.div>       
-   </>        
+   </div>        
     );
 }
