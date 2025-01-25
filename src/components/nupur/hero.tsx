@@ -7,7 +7,7 @@ export default function Hero() {
         <>
          
          <div className="
-   flex flex-col items-center justify-center md:mt-48  mt-28 mx-5 ">
+   flex flex-col items-center justify-center mt-60 mx-5 ">
       <motion.div 
           className="max-w-2xl text-center"
           initial={{ opacity: 0, y: 50 }} 
