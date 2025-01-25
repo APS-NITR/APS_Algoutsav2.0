@@ -13,7 +13,7 @@ export default function Navbar() {
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
  
       <Image src="/images/logo.png" width={50} 
-  height={50} alt="Flowbite Logo" className="mx-10"/>
+  height={50} alt="Flowbite Logo" className="mx-2 md:mx-10"/>
       
   
   <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
