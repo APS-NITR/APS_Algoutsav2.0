@@ -6,14 +6,13 @@ export default function Hero() {
     return (
         <div className="flex flex-col items-center justify-center ">
          
-         <div className="
-   flex flex-col items-center justify-center mt-60 mx-5 ">
-      <motion.div 
+         <div className="flex flex-col items-center justify-center mt-60 mx-5 ">
+        <motion.div 
           className="max-w-2xl text-center"
           initial={{ opacity: 0, y: 50 }} 
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-        >
+          >
             <Image src="/images/algo.png" width={1000}
    height={1000} alt="Flowbite Logo" className="mb-8"/>
         </motion.div>

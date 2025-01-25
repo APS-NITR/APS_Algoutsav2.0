@@ -64,6 +64,13 @@ const Gallery: React.FC = () => {
 
   return (
     <div id="gallery" className="flex flex-col items-center justify-center mt-28 mx-5">
+      <motion.div
+          className="text-center rounded-xl p-10 shadow-lg"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}
+          viewport={{ once: true }}  
+        >
       <h1 className="mb-10 text-4xl font-bold tracking-tight text-white">Gallery</h1>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4 mx-auto" style={{ width: "80%" }}>
         {images.map((column, colIndex) => (
@@ -95,6 +102,7 @@ const Gallery: React.FC = () => {
           </div>
         ))}
       </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,11 +1,18 @@
 "use client";
 import React from "react";
+import { motion } from "framer-motion";
 export default function About() {
   return (
    <>
   
 <div  className="flex  items-center justify-center bg-[#000]">
-    
+<motion.div
+    className="text-center rounded-xl p-10 shadow-lg"
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}
+    viewport={{ once: true }}  
+  >
     <div className="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
         <div className="mx-auto mb-8 max-w-screen-md  lg:mb-12 text-center">
             <h2 className="mb-10 text-4xl font-bold tracking-tight text-white">Takeaways</h2>
@@ -214,6 +221,7 @@ export default function About() {
             </div>
         </div>
     </div>
+    </motion.div>
     </div>
     
    
