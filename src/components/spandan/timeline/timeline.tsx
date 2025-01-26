@@ -1,8 +1,12 @@
+"use client";
+import React from "react";
 import { motion } from "framer-motion";
 
 const Timeline = () => {
-    return <motion.div
-    className="flex items-center justify-center bg-opacity-0 mt-20 mb-12"
+    return (
+        <div className="pt-16 -z-50">
+    <motion.div
+    className="flex items-center justify-center bg-opacity-0 mt-40 mb-12"
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}
@@ -46,6 +50,8 @@ const Timeline = () => {
 
 
     </motion.div>
+    </div>
+    );
 }
 
 export default Timeline;
