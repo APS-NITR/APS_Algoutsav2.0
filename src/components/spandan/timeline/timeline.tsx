@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Timeline = () => {
     return (
-        <div className="pt-16 -z-50">
+        <div className="pt-16 mx-6">
     <motion.div
     className="flex items-center justify-center bg-opacity-0 mt-40 mb-12"
     initial={{ opacity: 0, y: 50 }}

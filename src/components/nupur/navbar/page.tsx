@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed w-full mx-1 bg-gray-700 z-50 mt-5 rounded-full border-gray-200 dark:border-gray-600">
+      <nav className="fixed w-full bg-gray-700 z-50 mt-5 rounded-full border-gray-200 dark:border-gray-600">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Image
             src="/images/logo.png"
