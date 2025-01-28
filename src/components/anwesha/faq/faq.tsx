@@ -77,7 +77,7 @@ const FAQ = () => {
                 <h3 className="text-lg font-medium">{faq.question}</h3>
                 <motion.span
                   initial={{ rotate: 0 }}
-                  animate={{ rotate: openIndex === index ? 180 : 0 }}
+                  animate={{ rotate: openIndex === index ? 180 : 180 }}
                   transition={{ duration: 0.3 }}
                 >
                   {openIndex === index ? <FaChevronUp size={18} /> : <FaChevronDown size={18} />} {/* Chevron icon */}
