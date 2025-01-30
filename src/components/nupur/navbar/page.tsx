@@ -51,9 +51,15 @@ export default function Navbar() {
               FAQs
             </a>
           </div>
-
+          
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            
+          <Image
+            src="/images/algoutsavlogo.png"
+            width={60}
+            height={60}
+            alt="Flowbite Logo"
+            className="mx-1 md:mx-9"
+          />
 
             {/* Hamburger Menu for Mobile */}
             <div className="md:hidden">
@@ -89,7 +95,7 @@ export default function Navbar() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#stats"
                     className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Stats 2024
@@ -113,13 +119,14 @@ export default function Navbar() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#faq"
                     className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     FAQs
                   </a>
                 </li>
               </ul>
+              
             </motion.div>
           )}
         </div>

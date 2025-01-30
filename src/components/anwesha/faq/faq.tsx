@@ -22,7 +22,7 @@ const FAQ = () => {
   ];
 
   const links = [
-    { label: "Visit FAQ Center", url: "/" }, // Link to FAQ center
+   
     { label: "Register Now", url: "/register" }, // Link to Register page
     { label: "Ask for More Help", url: "/" }, // Link to Home or another help page
   ];
