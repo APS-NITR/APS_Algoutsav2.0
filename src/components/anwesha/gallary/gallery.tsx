@@ -10,53 +10,58 @@ const Gallery: React.FC = () => {
   const images: GalleryImage[][] = [
     [
       {
-        src: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-        alt: "gallery-photo-1",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80",
-        alt: "gallery-photo-2",
-      },
-      {
-        src: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+        src: "/images/IMG_4301.png",
         alt: "gallery-photo-3",
+      },
+     
+      {
+        src: "/images/IMG_4305.png",
+        alt: "gallery-photo-4",
       },
     ],
     [
       {
-        src: "https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        alt: "gallery-photo-4",
+        src: "/images/ayush-18.jpg",
+        alt: "gallery-photo-1",
       },
       {
-        src: "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+        src: "/images/IMG_4275.png",
+        alt: "gallery-photo-2",
+      },
+      {
+        src: "/images/IMG_20240316_175249.jpg",
         alt: "gallery-photo-5",
       },
       {
-        src: "https://docs.material-tailwind.com/img/team-3.jpg",
+        src: "/images/IMG_20240317_161953.jpg",
         alt: "gallery-photo-6",
       },
     ],
     [
       {
-        src: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+        src: "/images/IMG_20240317_173611.jpg",
         alt: "gallery-photo-7",
       },
       {
-        src: "https://docs.material-tailwind.com/img/team-3.jpg",
+        src: "/images/kshitiz-13.jpg",
         alt: "gallery-photo-8",
       },
       {
-        src: "https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        src: "/images/IMG_20240317_191943.jpg",
         alt: "gallery-photo-9",
       },
     ],
     [
       {
-        src: "https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        src: "/images/IMG_20240317_191640.jpg",
         alt: "gallery-photo-10",
       },
       {
-        src: "https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80",
+        src: "/images/IMG_4315.jpg",
+        alt: "gallery-photo-11",
+      },
+      {
+        src: "/images/kshitiz-6.jpg",
         alt: "gallery-photo-11",
       },
     ],
