@@ -14,6 +14,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"], // Custom font
+        gotham: ["Gotham Rounded", "sans-serif"],
+      },
     },
   },
   plugins: [],

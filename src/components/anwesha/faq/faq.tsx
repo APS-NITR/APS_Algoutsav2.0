@@ -28,7 +28,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="flex justify-center mt-10 py-10">
+    <div id="faq" className="flex justify-center mt-10 py-10">
       <div className="w-[80%] flex flex-col md:flex-row items-start gap-10">
         {/* Left Section */}
         <div className="md:w-1/2 w-full">

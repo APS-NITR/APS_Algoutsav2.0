@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 const Stats = () => {
     return (
+    <div id="stats">
     <motion.div
     className="flex items-center justify-center bg-opacity-0 mt-20 mb-12"
     initial={{ opacity: 0, y: 50 }}
@@ -67,6 +68,7 @@ const Stats = () => {
 </section>
 
     </motion.div>
+    </div>
     )
 }
 

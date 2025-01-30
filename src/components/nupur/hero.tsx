@@ -22,7 +22,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
         > 
-   <div className="max-w-xl text-center"><p>AlgoUtsav is an esteemed event organized by the Algorithmic and Programming Society (APS) of NIT Rourkela, operating under the Technical Society of the Student Activity Centre (SAC), NIT Rourkela</p></div>    
+   <div className="max-w-xl text-center "><p className="font-montserrat text-xl">AlgoUtsav is an esteemed event organized by the Algorithmic and Programming Society (APS) of NIT Rourkela, operating under the Technical Society of the Student Activity Centre (SAC), NIT Rourkela</p></div>    
    </motion.div>
    </div>
    <motion.div 
