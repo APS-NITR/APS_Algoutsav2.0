@@ -16,7 +16,7 @@ const FAQ = () => {
       answer: "A maximum of 2-3 members are allowed in a team as it will be an ICPC-style contest.",
     },
     { question: "Can team members be from different colleges ?", answer: "No, team members should be from the same college." },
-    { question: "Can team members be from different years ?", answer: "Yes, team members can be different for years." },
+    { question: "Can team members be from different years ?", answer: "Yes, team members can be from different years." },
     { question: "Is there any participation fee ?", answer: "No, there is no particiption fee." },
     { question: "Is the 1st round online ?", answer: "Yes, it will held be online on Codeforces ." },
     { question: "Will students be provided accommodation and food in the Stage 2 ?", answer: "Yes, for the second APS will provide accommodation." },
@@ -70,7 +70,7 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <motion.div
               key={index}
-              className={`p-4 rounded-lg shadow-md ${openIndex === index ? "bg-purple-600" : "bg-gray-800"} text-white cursor-pointer`}
+              className={`p-4 rounded-lg shadow-md ${openIndex === index ? "bg-gray-600" : "bg-gray-800"} text-white cursor-pointer`}
               onClick={() => toggleFAQ(index)}
               whileHover={{ scale: 1.03 }}
             >
