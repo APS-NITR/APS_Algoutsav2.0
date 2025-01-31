@@ -68,9 +68,9 @@ const Gallery: React.FC = () => {
   ];
 
   return (
-    <div id="gallery" className="flex flex-col items-center justify-center mt-28 mx-5">
+    <div id="gallery" className="flex flex-col items-center justify-center mt-28 md:mx-5">
       <motion.div
-          className="text-center rounded-xl p-10 shadow-lg"
+          className="text-center rounded-xl md:p-10 shadow-lg"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}
@@ -99,7 +99,7 @@ const Gallery: React.FC = () => {
                   whileHover={{
                     scale: 1.05,
                     rotate: 2,
-                    transition: { duration: 0.3 },
+                    transition: { duration: 0.1 },
                   }}
                 />
               </motion.div>

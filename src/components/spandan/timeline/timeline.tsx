@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 const Timeline = () => {
     return (
         <div className="pt-16 mx-6">
+            <h2 className="text-white text-4xl font-bold tracking-wide text-center">TimeLine</h2>
     <motion.div
-    className="flex items-center justify-center bg-opacity-0 mt-40 mb-12"
+    className="flex items-center justify-center bg-opacity-0 mt-20 mb-12"
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}

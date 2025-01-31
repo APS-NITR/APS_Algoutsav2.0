@@ -5,7 +5,7 @@ export default function About() {
   return (
    <>
   
-<div  className="flex  items-center justify-center bg-[#000]">
+<div  className="flex  items-center justify-center">
 <motion.div
     className="text-center rounded-xl p-10 shadow-lg"
     initial={{ opacity: 0, y: 50 }}
