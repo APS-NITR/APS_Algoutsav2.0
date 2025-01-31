@@ -12,13 +12,14 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What is the maximum number of members in a team allowed?",
+      question: "What is the maximum number of members in a team allowed ?",
       answer: "A maximum of 2-3 members are allowed in a team as it will be an ICPC-style contest.",
     },
-    { question: "Question 2?", answer: "Answer to question 2." },
-    { question: "Question 3?", answer: "Answer to question 3." },
-    { question: "Question 4?", answer: "Answer to question 4." },
-    { question: "Question 5?", answer: "Answer to question 5." },
+    { question: "Can team members be from different colleges ?", answer: "No" },
+    { question: "Can team members be from different years ?", answer: "Yes" },
+    { question: "Is there any participation fee ?", answer: "No" },
+    { question: "Is the 1st round online ?", answer: "Yes" },
+    { question: "Will students be provided accommodation and food in the Stage 2 ?", answer: "Yes" },
   ];
 
   const links = [
@@ -80,7 +81,7 @@ const FAQ = () => {
                   animate={{ rotate: openIndex === index ? 180 : 180 }}
                   transition={{ duration: 0.3 }}
                 >
-                  {openIndex === index ? <FaChevronUp size={18} /> : <FaChevronDown size={18} />} {/* Chevron icon */}
+                  {openIndex === index ? <FaChevronDown size={18} /> : <FaChevronUp size={18} />} {/* Chevron icon */}
                 </motion.span>
               </div>
               {openIndex === index && (

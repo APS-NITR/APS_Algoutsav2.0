@@ -10,58 +10,58 @@ const Gallery: React.FC = () => {
   const images: GalleryImage[][] = [
     [
       {
-        src: "/images/IMG_4301.png",
+        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738334103/IMG_4301_bzzudm.jpg",
         alt: "gallery-photo-3",
       },
      
       {
-        src: "/images/IMG_4305.png",
+        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738333895/IMG_4305_zhkmsw.jpg",
         alt: "gallery-photo-4",
       },
     ],
     [
       {
-        src: "/images/ayush-18.jpg",
+        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738333888/ayush-18_upivj4.jpg",
         alt: "gallery-photo-1",
       },
       {
-        src: "/images/IMG_4275.png",
+        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738332642/IMG_4275_iqttw4.png",
         alt: "gallery-photo-2",
       },
       {
-        src: "/images/IMG_20240316_175249.jpg",
+        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738332640/IMG_20240316_175249_v1u5f8.jpg",
         alt: "gallery-photo-5",
       },
       {
-        src: "/images/IMG_20240317_161953.jpg",
+        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738332638/IMG_20240317_161953_hfirlw.jpg",
         alt: "gallery-photo-6",
       },
     ],
     [
       {
-        src: "/images/IMG_20240317_173611.jpg",
+        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738334834/IMG_20240317_173611_oe7r5h.jpg",
         alt: "gallery-photo-7",
       },
       {
-        src: "/images/kshitiz-13.jpg",
+        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738334239/kshitiz-13_o4t1ir.jpg",
         alt: "gallery-photo-8",
       },
       {
-        src: "/images/IMG_20240317_191943.jpg",
+        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738335149/IMG_20240317_191943_cav149.jpg",
         alt: "gallery-photo-9",
       },
     ],
     [
       {
-        src: "/images/IMG_20240317_191640.jpg",
+        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738335143/IMG_20240317_191640_lzu6za.jpg",
         alt: "gallery-photo-10",
       },
       {
-        src: "/images/IMG_4315.jpg",
+        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738332619/IMG_4315_wod7g7.jpg",
         alt: "gallery-photo-11",
       },
       {
-        src: "/images/kshitiz-6.jpg",
+        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738334236/kshitiz-6_xrsty0.jpg",
         alt: "gallery-photo-11",
       },
     ],
