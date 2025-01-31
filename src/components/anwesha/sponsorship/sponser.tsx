@@ -5,13 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Sponsorship: React.FC = () => {
-  const pastSponsors = [
-    { src: "/images/walmart.png", alt: "Walmart" },
-    { src: "/images/cisco.png", alt: "Cisco" },
-    { src: "/images/volvo.png", alt: "Volvo" },
-    { src: "/images/deloitte.png", alt: "Deloitte" },
-    { src: "/images/okta.png", alt: "Okta" },
-  ];
+ 
 
   const currentSponsors = [
     { src: "/images/all.png", alt: "ALL" },
@@ -37,35 +31,7 @@ const Sponsorship: React.FC = () => {
       className="bg-cover bg-center py-12 px-6 "
       style={{ backgroundImage: 'url("/backgrounds/sponsors-bg.jpg")'}}
     >
-      <motion.div
-        className="text-center mb-10"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-      >
-        <h2 className="text-gray-300 text-sm uppercase tracking-wide">
-          Past Year Sponsors
-        </h2>
-        <div className="flex justify-center items-center space-x-6 mt-4">
-          {pastSponsors.map((sponsor, index) => (
-            <motion.div
-              key={index}
-              initial="initial"
-              animate="animate"
-              transition={{ ...fadeInUp.transition, delay: index * 0.2 }}
-              variants={fadeInUp}
-            >
-              <Image
-                src={sponsor.src}
-                alt={sponsor.alt}
-                width={80}
-                height={40}
-                className="p-4 rounded-lg shadow-md flex items-center justify-center hover:scale-105 transition-transform duration-300"
-              />
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+      
 
       <motion.div
         className="text-center w-[80%] mx-auto"

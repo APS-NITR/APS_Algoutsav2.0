@@ -23,9 +23,10 @@ export default function Navbar() {
 
           {/* Desktop Navigation Options */}
           <div className="hidden md:flex space-x-6">
-            <Link href="#about" legacyBehavior>
-              <a className="text-white hover:text-blue-500">About AU</a>
-            </Link>
+            
+              <a 
+              href="#about" className="text-white hover:text-blue-500">About AU</a>
+            
             <a
               href="#stats"
               className="text-white hover:text-blue-500"
@@ -86,7 +87,9 @@ export default function Navbar() {
                 <li>
                   <Link href="#about" legacyBehavior>
                     <a
-                      className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                      className="block py-2 px-3 text-gray-100 rounded-sm hover:bg-gray-500 
+                      hover:text-lg
+                      md:hover:bg-transparent hover:text-gray-900 md:p-0  md:dark:hover:bg-transparent dark:border-gray-700"
                       aria-current="page"
                     >
                       About AU
@@ -96,7 +99,8 @@ export default function Navbar() {
                 <li>
                   <a
                     href="#stats"
-                    className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    className="block py-2 px-3 text-gray-100 rounded-sm hover:bg-gray-500
+                    hover:text-lg md:hover:bg-transparent hover:text-gray-900 md:p-0  md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Stats 2024
                   </a>
@@ -104,7 +108,8 @@ export default function Navbar() {
                 <li>
                   <a
                     href="#sponsers"
-                    className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                   className="block py-2 px-3 text-gray-100 rounded-sm hover:bg-gray-500 
+                   hover:text-lg md:hover:bg-transparent hover:text-gray-900 md:p-0  md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Sponsors
                   </a>
@@ -112,7 +117,9 @@ export default function Navbar() {
                 <li>
                   <a
                     href="#gallery"
-                    className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                   className="block py-2 px-3 text-gray-100 rounded-sm hover:bg-gray-500 
+                   hover:text-lg
+                   md:hover:bg-transparent hover:text-gray-900 md:p-0  md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Gallery
                   </a>
@@ -120,7 +127,8 @@ export default function Navbar() {
                 <li>
                   <a
                     href="#faq"
-                    className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                   className="block py-2 px-3 text-gray-100 rounded-sm hover:bg-gray-500 
+                   hover:text-lg md:hover:bg-transparent hover:text-gray-900 md:p-0  md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     FAQs
                   </a>
