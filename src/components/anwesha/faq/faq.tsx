@@ -15,11 +15,11 @@ const FAQ = () => {
       question: "What is the maximum number of members in a team allowed ?",
       answer: "A maximum of 2-3 members are allowed in a team as it will be an ICPC-style contest.",
     },
-    { question: "Can team members be from different colleges ?", answer: "No" },
-    { question: "Can team members be from different years ?", answer: "Yes" },
-    { question: "Is there any participation fee ?", answer: "No" },
-    { question: "Is the 1st round online ?", answer: "Yes" },
-    { question: "Will students be provided accommodation and food in the Stage 2 ?", answer: "Yes" },
+    { question: "Can team members be from different colleges ?", answer: "No, team members should be from the same college." },
+    { question: "Can team members be from different years ?", answer: "Yes, team members can be different for years." },
+    { question: "Is there any participation fee ?", answer: "No, there is no particiption fee." },
+    { question: "Is the 1st round online ?", answer: "Yes, it will held be online on Codeforces ." },
+    { question: "Will students be provided accommodation and food in the Stage 2 ?", answer: "Yes, for the second APS will provide accommodation." },
   ];
 
   const links = [
