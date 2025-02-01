@@ -73,7 +73,7 @@ const Gallery: React.FC = () => {
           className="text-center rounded-xl md:p-10 shadow-lg"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}
+          transition={{ duration: 1, delay: 0.1, ease: 'easeOut' }}
           viewport={{ once: true }}  
         >
       <h1 className="mb-10 text-4xl font-bold tracking-tight text-white">Gallery</h1>
@@ -99,7 +99,7 @@ const Gallery: React.FC = () => {
                   whileHover={{
                     scale: 1.05,
                     rotate: 2,
-                    transition: { duration: 0.1 },
+                    transition: { duration: 0.3 },
                   }}
                 />
               </motion.div>

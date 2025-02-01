@@ -8,6 +8,7 @@ import FAQ from "@/components/anwesha/faq/faq";
 import Timeline from "@/components/spandan/timeline/timeline";
 import Stats from "@/components/spandan/stats/stats";
 import Footer from "@/components/nupur/footer";
+import Tooltip from "@/components/nupur/animated_tooltip"
 export default function Home() {
   return (
    <>
@@ -20,6 +21,7 @@ export default function Home() {
       {/*<Prizes />*/}
       <Gallery/>
       <FAQ/>
+    <Tooltip/>
       <Footer/>
 
     

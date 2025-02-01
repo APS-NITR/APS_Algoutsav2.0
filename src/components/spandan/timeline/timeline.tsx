@@ -4,14 +4,21 @@ import { motion } from "framer-motion";
 
 const Timeline = () => {
     return (
-        <div className="pt-16 mx-6">
-            <h2 className="text-white text-4xl font-bold tracking-wide text-center">TimeLine</h2>
+        <div id="timeline" className="pt-16 mx-6">
+             <motion.div
+    className="flex items-center justify-center bg-opacity-0 mt-20 mb-12"
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}
+    viewport={{ once: true }}  ><h2 className="text-white text-4xl font-bold tracking-wide text-center">TimeLine</h2> </motion.div>
+           
     <motion.div
     className="flex items-center justify-center bg-opacity-0 mt-20 mb-12"
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}
     viewport={{ once: true }}  >
+        
         <ol className="relative border-s border-gray-200 dark:border-gray-700">                  
             <li className="mb-10 ms-6">            
                 <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">

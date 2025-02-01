@@ -37,7 +37,13 @@ export default function Navbar() {
               href="#sponsers"
               className="text-white hover:text-blue-500"
             >
-              Sponsers
+              Sponsors
+            </a>
+            <a
+              href="#timeline"
+              className="text-white hover:text-blue-500"
+            >
+              Timeline
             </a>
             <a
               href="#gallery"
@@ -112,6 +118,15 @@ export default function Navbar() {
                    hover:text-lg md:hover:bg-transparent hover:text-gray-900 md:p-0  md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Sponsors
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#timeline"
+                   className="block py-2 px-3 text-gray-100 rounded-sm hover:bg-gray-500 
+                   hover:text-lg md:hover:bg-transparent hover:text-gray-900 md:p-0  md:dark:hover:bg-transparent dark:border-gray-700"
+                  >
+                    Timeline
                   </a>
                 </li>
                 <li>

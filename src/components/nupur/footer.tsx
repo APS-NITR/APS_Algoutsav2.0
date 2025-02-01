@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+//import { AnimatedTooltip } from "../ui/animated-tooltip";
 export default function Footer() {
     return (
         <>
