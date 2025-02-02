@@ -9,7 +9,7 @@ const Sponsorship: React.FC = () => {
 
   const currentSponsors = [
     { src: "/images/algozenith.png", alt: "Algozenith" },
-    { src: "/images/hexagon.png", alt: "Groupe All" },
+    { src: "/images/senior.jpg", alt: "Senior" },
     { src: "/images/evo.png", alt: "Evo" },
     { src: "/images/caneva.png", alt: "Caneva" },
     { src: "/images/haba.png", alt: "Haba" },
