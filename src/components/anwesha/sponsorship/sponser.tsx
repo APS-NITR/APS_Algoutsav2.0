@@ -8,7 +8,7 @@ const Sponsorship: React.FC = () => {
  
 
   const currentSponsors = [
-    { src: "/images/all.png", alt: "ALL" },
+    { src: "/images/algozenith.png", alt: "Algozenith" },
     { src: "/images/hexagon.png", alt: "Groupe All" },
     { src: "/images/evo.png", alt: "Evo" },
     { src: "/images/caneva.png", alt: "Caneva" },
@@ -50,14 +50,14 @@ const Sponsorship: React.FC = () => {
               animate="animate"
               transition={{ ...fadeInUp.transition, delay: index * 0.2 }}
               variants={fadeInUp}
-              className="p-4 rounded-lg shadow-md flex items-center justify-center hover:scale-105 transition-transform duration-300"
+              className="p-4 shadow-md flex items-center justify-center hover:scale-105 transition-transform duration-300"
             >
               <Image
                 src={sponsor.src}
                 alt={sponsor.alt}
                 width={120}
                 height={60}
-                className="object-contain"
+                className="object-contain rounded-lg"
               />
             </motion.div>
           ))}
