@@ -24,7 +24,7 @@ const FAQ = () => {
 
   const links = [
    
-    { label: "Register Now", url: "/register" }, // Link to Register page
+    { label: "Register Now", url: "https://tinyurl.com/AlgoUtsav2025" }, // Link to Register page
     { label: "Ask for More Help", url: "/" }, // Link to Home or another help page
   ];
 
@@ -44,7 +44,7 @@ const FAQ = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Link href={link.url}>
+                <Link href={link.url} target="_blank">
                   <div
                     className="w-full flex items-center justify-between p-4 text-lg font-semibold bg-[white] text-[black] hover:bg-[cyan] rounded-lg shadow-md"
                   >
