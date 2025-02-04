@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
+import { fadeIn } from "@/lib/motion";
 const Sponsorship: React.FC = () => {
   const sponsors = [
     { src: "/images/algozenith.png", alt: "Algozenith" },
@@ -14,7 +14,7 @@ const Sponsorship: React.FC = () => {
   return (
     <div id="sponsers" className="w-full py-16 flex flex-col items-center justify-center">
       {/* Section Heading */}
-      <motion.h2
+      {/* <motion.h2
         className="text-4xl md:text-5xl font-extrabold text-white  mb-12"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +22,17 @@ const Sponsorship: React.FC = () => {
         viewport={{ once: true }}
       >
         Sponsored By
-      </motion.h2>
+      </motion.h2> */}
+      <motion.h1 
+                        variants={fadeIn('down', 'spring', 0.2, 1)}
+                        initial="hidden"
+                        whileInView="show"
+                        className="text-center mb-12 sm:mb-16"
+                    >
+                        <span className="font-extrabold text-transparent text-4xl sm:text-5xl bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
+                            SPONSORS
+                        </span>
+                    </motion.h1>
 
       {/* Sponsors Container */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-10">

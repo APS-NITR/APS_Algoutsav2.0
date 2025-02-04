@@ -2,7 +2,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { TextGenerateEffect } from "../../ui/text-generate-effect";
- 
+import { fadeIn } from "@/lib/motion";
 const words = `Last year, AlgoUtsav emerged as a remarkable success, solidifying its reputation as one of the 
             leading ICPC-style coding events in India. The winners were felicitated with lucrative cash prizes, 
             recognizing their exceptional performance and hard work. AlgoUtsav 2024 not only provided a 
@@ -47,9 +47,16 @@ const Stats = () => {
       >
         {/* Emphasized AlgoUtsav 2024 Text */}
         <div className="mx-auto max-w-3xl md:text-center">
-          <h2 className="font-display text-white font-black md:text-5xl text-3xl font-montserrat tracking-wider mb-10 ">
-            Previous Year Statistics
-          </h2>
+          <motion.h1 
+                            variants={fadeIn('down', 'spring', 0.2, 1)}
+                            initial="hidden"
+                            whileInView="show"
+                            className="text-center mb-12 sm:mb-16"
+                        >
+                            <span className="font-extrabold text-transparent text-4xl sm:text-5xl bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
+                                STATS 2024
+                            </span>
+                        </motion.h1>
           {/* <p className="mt-10 text-sm md:text-lg tracking-tight text-gray-200">
             
           </p> */}
