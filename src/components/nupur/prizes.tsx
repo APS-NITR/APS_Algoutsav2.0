@@ -34,19 +34,19 @@ export default function About() {
   return (
    <>
   
-<div  className="flex  items-center justify-center">
+<div  className="flex w-full mt-10 items-center justify-center">
 <motion.div
-    className="text-center rounded-xl p-10 shadow-lg"
+    className="text-center rounded-xl shadow-lg"
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}
     viewport={{ once: true }}  
   >
-    <div className="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16 w-full">
-        <div className="mx-auto mb-8 max-w-screen-md  lg:mb-12 text-center">
+    
+        <div className="mb-8 lg:mb-12 text-center">
             <h2 className="mb-10 text-white font-black md:text-5xl text-3xl font-montserrat tracking-wider">Takeaways</h2>
         </div>
-        <div  className="p-8 rounded-3xl border border-gray-500 text-center shadow-2xl backdrop-blur-xl"
+        <div  className="mx-4 p-8 rounded-3xl border border-gray-500 text-center shadow-2xl backdrop-blur-xl"
             style={{
               background: "linear-gradient(135deg, rgba(50,50,50,0.8), rgba(200,200,200,0.1))",
               boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.6)"}}>
@@ -67,7 +67,7 @@ export default function About() {
         <div className="space-y-8  lg:grid md:grid-cols-2 lg:space-y-0 lg:gap-10">
            
             <div
-                className="mx-auto flex max-w-lg space-y-8 items-center flex-col rounded-3xl border border-gray-500 backdrop-blur-lg shadow-2xl
+                className="flex w-full space-y-8 items-center flex-col rounded-3xl border border-gray-500 backdrop-blur-lg shadow-2xl
  p-6 text-gray-300 
                  xl:p-8">
 
@@ -115,7 +115,7 @@ export default function About() {
 
             </div>
             <div
-                className="mx-auto flex max-w-lg space-y-8 items-center flex-col rounded-3xl border border-gray-500 backdrop-blur-lg shadow-2xl
+                className="flex w-full space-y-8 items-center flex-col rounded-3xl border border-gray-500 backdrop-blur-lg shadow-2xl
  p-6 text-gray-300 
                  xl:p-8">
 
@@ -169,7 +169,7 @@ export default function About() {
     </div>
    
     </div>
-        </div>
+        
     
     </motion.div>
     </div>
