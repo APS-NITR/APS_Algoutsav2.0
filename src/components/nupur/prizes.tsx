@@ -25,7 +25,7 @@ const Feedback = () => (
             viewport={{ once: false, amount: 0.25 }}
             className="w-[100%] mx-auto justify-center flex lg:flex-row flex-col gap-6"
         >
-            {/* Team Contest Card - Wider */}
+      
             <motion.div
                 variants={fadeIn('right', 'tween', 0.2, 1)}
                 className="lg:max-w-[430px] w-full flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
@@ -53,7 +53,7 @@ const Feedback = () => (
                 <p className="text-[#ffffffaa] text-xs mt-4">*Prizes include Algoutsav merchandise and stickers.</p>
             </motion.div>
 
-            {/* Individual Contest Card - Wider */}
+          
             <motion.div
                 variants={fadeIn('left', 'tween', 0.2, 1)}
                 className="relative lg:max-w-[430px] w-full flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A]"
@@ -80,7 +80,7 @@ const Feedback = () => (
                 </div>
                 <p className="text-[#ffffffaa] text-xs mt-4">*Prizes include Algoutsav merchandise and stickers.</p>
 
-                {/* Total Prize Worth Component */}
+             
                 <motion.div
                     variants={zoomIn(0.4, 1)}
                     className="lg:block hidden absolute -left-[21%] top-[-10%]"
