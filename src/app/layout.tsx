@@ -2,7 +2,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import Navbar from "@/components/nupur/navbar/page";
+
 import Bg from "@/components/nupur/background";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +26,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ` } >
        <Bg/>   
-      <Navbar/>
     <div className="container mx-auto">{children}</div>
       </body>
     </html>
