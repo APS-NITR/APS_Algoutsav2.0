@@ -5,13 +5,13 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
-
-const styles = {
-  sectionHeadText:
-    "text-white font-black md:text-5xl text-3xl font-montserrat tracking-wider",
-  sectionSubText:
-    "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
-};
+import { fadeIn } from "@/lib/motion";
+// const styles = {
+//   sectionHeadText:
+//     "text-white font-black md:text-5xl text-3xl font-montserrat tracking-wider",
+//   sectionSubText:
+//     "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
+// };
 
 const checkpoints = [
   {
@@ -80,10 +80,17 @@ const TimelineCard: React.FC<CheckpointProps> = ({ checkpoint }) => (
 
 const Timeline = () => {
   return (
-    <section id="timeline" className="py-10">
-      <motion.div className="text-center">
-        <p className={styles.sectionHeadText}>Contest Timeline</p>
-      </motion.div>
+    <section id="timeline" className="py-16 mt-20">
+      <motion.h1
+        variants={fadeIn('down', 'spring', 0.2, 1)}
+        initial="hidden"
+        whileInView="show"
+        className="text-center mb-12 sm:mb-16"
+      >
+        <span className="font-extrabold text-transparent text-4xl sm:text-5xl bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
+          CONTEST TIMELINE
+        </span>
+      </motion.h1>
       <div className="mt-10">
         <VerticalTimeline>
           {checkpoints.map((checkpoint, index) => (
@@ -97,7 +104,7 @@ const Timeline = () => {
 
 const TimelineIcon = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="30 5 5 54"><linearGradient id="W68hGGKaiwyivXUEOY5qja" x1="18" x2="18" y1="27.915" y2="31.689" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#6dc7ff"/><stop offset="1" stopColor="#e6abff"/></linearGradient><circle cx="18" cy="30" r="2" fill="url(#W68hGGKaiwyivXUEOY5qja)"/><linearGradient id="W68hGGKaiwyivXUEOY5qjb" x1="46" x2="46" y1="28.106" y2="31.384" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#6dc7ff"/><stop offset="1" stopColor="#e6abff"/></linearGradient><circle cx="46" cy="30" r="2" fill="url(#W68hGGKaiwyivXUEOY5qjb)"/><linearGradient id="W68hGGKaiwyivXUEOY5qjc" x1="32" x2="32" y1="14.947" y2="20.788" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#6dc7ff"/><stop offset="1" stopColor="#e6abff"/></linearGradient><circle cx="32" cy="18" r="3" fill="url(#W68hGGKaiwyivXUEOY5qjc)"/><linearGradient id="W68hGGKaiwyivXUEOY5qjd" x1="33" x2="33" y1="38.702" y2="43.529" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#6dc7ff"/><stop offset="1" stopColor="#e6abff"/></linearGradient><circle cx="33" cy="42" r="3" fill="url(#W68hGGKaiwyivXUEOY5qjd)"/><g><linearGradient id="W68hGGKaiwyivXUEOY5qje" x1="32" x2="32" y1="6.404" y2="58.342" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#1a6dff"/><stop offset="1" stopColor="#c822ff"/></linearGradient><path fill="url(#W68hGGKaiwyivXUEOY5qje)" d="M51,6H13c-2.757,0-5,2.243-5,5v38v4c0,2.757,2.243,5,5,5h38c2.757,0,5-2.243,5-5V11 C56,8.243,53.757,6,51,6z M51,56H13c-1.654,0-3-1.346-3-3v-0.026C10.838,53.609,11.87,54,13,54h38c1.13,0,2.162-0.391,3-1.026V53 C54,54.654,52.654,56,51,56z M54,49c0,1.654-1.346,3-3,3H23v-6c0-1.654,1.346-3,3-3h2.101c0.465,2.279,2.484,4,4.899,4 c2.757,0,5-2.243,5-5s-2.243-5-5-5c-2.414,0-4.434,1.721-4.899,4H26c-2.757,0-5,2.243-5,5v6h-8c-1.654,0-3-1.346-3-3V11 c0-1.654,1.346-3,3-3h29v6c0,1.654-1.346,3-3,3h-2.101c-0.465-2.279-2.484-4-4.899-4c-2.757,0-5,2.243-5,5s2.243,5,5,5 c2.414,0,4.434-1.721,4.899-4H39c2.757,0,5-2.243,5-5V8h7c1.654,0,3,1.346,3,3V49z M30,42c0-1.654,1.346-3,3-3s3,1.346,3,3 s-1.346,3-3,3S30,43.654,30,42z M35,18c0,1.654-1.346,3-3,3s-3-1.346-3-3s1.346-3,3-3S35,16.346,35,18z"/><linearGradient id="W68hGGKaiwyivXUEOY5qjf" x1="32" x2="32" y1="6.404" y2="58.342" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#1a6dff"/><stop offset="1" stopColor="#c822ff"/></linearGradient><path fill="url(#W68hGGKaiwyivXUEOY5qjf)" d="M46,24c-2.967,0-5.431,2.167-5.91,5H23.91c-0.478-2.833-2.942-5-5.91-5c-3.309,0-6,2.691-6,6 s2.691,6,6,6c2.967,0,5.431-2.167,5.91-5H40.09c0.478,2.833,2.942,5,5.91,5c3.309,0,6-2.691,6-6S49.309,24,46,24z M18,34 c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S20.206,34,18,34z M46,34c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4 S48.206,34,46,34z"/></g></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="30 5 5 54"><linearGradient id="W68hGGKaiwyivXUEOY5qja" x1="18" x2="18" y1="27.915" y2="31.689" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#6dc7ff" /><stop offset="1" stopColor="#e6abff" /></linearGradient><circle cx="18" cy="30" r="2" fill="url(#W68hGGKaiwyivXUEOY5qja)" /><linearGradient id="W68hGGKaiwyivXUEOY5qjb" x1="46" x2="46" y1="28.106" y2="31.384" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#6dc7ff" /><stop offset="1" stopColor="#e6abff" /></linearGradient><circle cx="46" cy="30" r="2" fill="url(#W68hGGKaiwyivXUEOY5qjb)" /><linearGradient id="W68hGGKaiwyivXUEOY5qjc" x1="32" x2="32" y1="14.947" y2="20.788" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#6dc7ff" /><stop offset="1" stopColor="#e6abff" /></linearGradient><circle cx="32" cy="18" r="3" fill="url(#W68hGGKaiwyivXUEOY5qjc)" /><linearGradient id="W68hGGKaiwyivXUEOY5qjd" x1="33" x2="33" y1="38.702" y2="43.529" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#6dc7ff" /><stop offset="1" stopColor="#e6abff" /></linearGradient><circle cx="33" cy="42" r="3" fill="url(#W68hGGKaiwyivXUEOY5qjd)" /><g><linearGradient id="W68hGGKaiwyivXUEOY5qje" x1="32" x2="32" y1="6.404" y2="58.342" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#1a6dff" /><stop offset="1" stopColor="#c822ff" /></linearGradient><path fill="url(#W68hGGKaiwyivXUEOY5qje)" d="M51,6H13c-2.757,0-5,2.243-5,5v38v4c0,2.757,2.243,5,5,5h38c2.757,0,5-2.243,5-5V11 C56,8.243,53.757,6,51,6z M51,56H13c-1.654,0-3-1.346-3-3v-0.026C10.838,53.609,11.87,54,13,54h38c1.13,0,2.162-0.391,3-1.026V53 C54,54.654,52.654,56,51,56z M54,49c0,1.654-1.346,3-3,3H23v-6c0-1.654,1.346-3,3-3h2.101c0.465,2.279,2.484,4,4.899,4 c2.757,0,5-2.243,5-5s-2.243-5-5-5c-2.414,0-4.434,1.721-4.899,4H26c-2.757,0-5,2.243-5,5v6h-8c-1.654,0-3-1.346-3-3V11 c0-1.654,1.346-3,3-3h29v6c0,1.654-1.346,3-3,3h-2.101c-0.465-2.279-2.484-4-4.899-4c-2.757,0-5,2.243-5,5s2.243,5,5,5 c2.414,0,4.434-1.721,4.899-4H39c2.757,0,5-2.243,5-5V8h7c1.654,0,3,1.346,3,3V49z M30,42c0-1.654,1.346-3,3-3s3,1.346,3,3 s-1.346,3-3,3S30,43.654,30,42z M35,18c0,1.654-1.346,3-3,3s-3-1.346-3-3s1.346-3,3-3S35,16.346,35,18z" /><linearGradient id="W68hGGKaiwyivXUEOY5qjf" x1="32" x2="32" y1="6.404" y2="58.342" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#1a6dff" /><stop offset="1" stopColor="#c822ff" /></linearGradient><path fill="url(#W68hGGKaiwyivXUEOY5qjf)" d="M46,24c-2.967,0-5.431,2.167-5.91,5H23.91c-0.478-2.833-2.942-5-5.91-5c-3.309,0-6,2.691-6,6 s2.691,6,6,6c2.967,0,5.431-2.167,5.91-5H40.09c0.478,2.833,2.942,5,5.91,5c3.309,0,6-2.691,6-6S49.309,24,46,24z M18,34 c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S20.206,34,18,34z M46,34c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4 S48.206,34,46,34z" /></g></svg>
   )
 }
 

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FaQuestionCircle, FaLink, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import {FaQuestionCircle,  FaLink, FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -41,6 +41,8 @@ const FAQ = () => {
             Frequently Asked Questions
             <FaQuestionCircle className="text-green-400" size={40} />
           </motion.h2>
+
+           
 
           <div className="mt-6 space-y-4">
             {links.map((link, index) => (
