@@ -38,15 +38,15 @@ const Feedback = () => (
                     <div className="mt-6 space-y-6">
                         <div className="bg-[#ffffff08] p-4 rounded-xl">
                             <p className="text-[#FFD700] font-semibold sm:text-[20px] text-[16px]">Winners Prizes Worth</p>
-                            <p className="text-white sm:text-[24px] text-[20px] mt-2">₹39,000+</p>
+                            <p className="text-white sm:text-[24px] text-[20px] mt-2">₹40,000</p>
                         </div>
                         <div className="bg-[#ffffff08] p-4 rounded-xl">
                             <p className="text-[#C0C0C0] font-semibold sm:text-[18px] text-[14px]">1st Runners Up</p>
-                            <p className="text-white sm:text-[22px] text-[18px] mt-2">₹32,000+</p>
+                            <p className="text-white sm:text-[22px] text-[18px] mt-2">₹30,000</p>
                         </div>
                         <div className="bg-[#ffffff08] p-4 rounded-xl">
                             <p className="text-[#CD7F32] font-semibold sm:text-[16px] text-[12px]">2nd Runners Up</p>
-                            <p className="text-white sm:text-[20px] text-[16px] mt-2">₹23,000+</p>
+                            <p className="text-white sm:text-[20px] text-[16px] mt-2">₹20,000</p>
                         </div>
                     </div>
                 </div>
@@ -66,15 +66,15 @@ const Feedback = () => (
                     <div className="mt-6 space-y-6">
                         <div className="bg-[#ffffff08] p-4 rounded-xl">
                             <p className="text-[#FFD700] font-semibold sm:text-[20px] text-[16px]">Winner Prizes Worth</p>
-                            <p className="text-white sm:text-[24px] text-[20px] mt-2">₹24,000+</p>
+                            <p className="text-white sm:text-[24px] text-[20px] mt-2">₹25,000</p>
                         </div>
                         <div className="bg-[#ffffff08] p-4 rounded-xl">
                             <p className="text-[#C0C0C0] font-semibold sm:text-[18px] text-[14px]">1st Runners Up</p>
-                            <p className="text-white sm:text-[22px] text-[18px] mt-2">₹19,000+</p>
+                            <p className="text-white sm:text-[22px] text-[18px] mt-2">₹20,000</p>
                         </div>
                         <div className="bg-[#ffffff08] p-4 rounded-xl">
                             <p className="text-[#CD7F32] font-semibold sm:text-[16px] text-[12px]">2nd Runners Up</p>
-                            <p className="text-white sm:text-[20px] text-[16px] mt-2">₹13,000+</p>
+                            <p className="text-white sm:text-[20px] text-[16px] mt-2">₹15,000</p>
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@ const Feedback = () => (
                     className="lg:block hidden absolute -left-[21%] top-[-10%]"
                 >
                     <Image
-                        src="/images/stamp.png"
+                        src="/images/stamp1.png"
                         alt="stamp"
                         width={155}
                         height={155}

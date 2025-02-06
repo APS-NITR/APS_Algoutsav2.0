@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import {FaQuestionCircle,  FaLink, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaQuestionCircle, FaLink, FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -23,13 +23,13 @@ const FAQ = () => {
 
   const links = [
     { label: "Register Now", url: "https://tinyurl.com/AlgoUtsav2025" },
-    { label: "Ask for More Help", url: "/" },
+    { label: "About Nit Rourkela", url: "https://www.nitrkl.ac.in/Institute/Welcome" },
+    { label: "About Student Activity Center", url: "https://www.nitrkl.ac.in/SAC" },
   ];
 
   return (
     <div id="faq" className="flex justify-center mt-20 py-12 px-4">
       <div className="w-full max-w-5xl flex flex-col md:flex-row items-start gap-10">
-        
         {/* Left Section - Title & Links */}
         <div className="md:w-1/2 w-full">
           <motion.h2
@@ -39,10 +39,8 @@ const FAQ = () => {
             transition={{ duration: 0.8 }}
           >
             Frequently Asked Questions
-            <FaQuestionCircle className="text-green-400" size={40} />
+            <FaQuestionCircle className="text-cyan-400" size={40} />
           </motion.h2>
-
-           
 
           <div className="mt-6 space-y-4">
             {links.map((link, index) => (
@@ -52,12 +50,12 @@ const FAQ = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link href={link.url} target="_blank">
-                  <div className="flex items-center justify-between p-4 text-lg font-semibold bg-white text-black hover:bg-cyan-400 transition-all duration-300 rounded-lg shadow-md cursor-pointer">
+                  <div className="flex items-center justify-between p-4 text-lg font-semibold bg-gray-800 text-gray-100 hover:bg-cyan-600 transition-all duration-300 rounded-lg shadow-md cursor-pointer">
                     <span className="flex items-center gap-2">
-                      <FaLink size={20} className="text-blue-500" />
+                      <FaLink size={20} className="text-cyan-300" />
                       {link.label}
                     </span>
-                    <span>➔</span>
+                    <span className="text-cyan-100">➔</span>
                   </div>
                 </Link>
               </motion.div>
@@ -75,9 +73,11 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <motion.div
               key={index}
-              className={`p-5 rounded-xl shadow-lg transition-all duration-300 ${
-                openIndex === index ? "bg-opacity-90 backdrop-blur-lg bg-gray-700" : "bg-gray-900 bg-opacity-60 backdrop-blur-lg"
-              } cursor-pointer border border-gray-600 hover:shadow-xl`}
+              className={`p-5 rounded-xl transition-all duration-300 border border-gray-700 cursor-pointer hover:shadow-xl ${
+                openIndex === index
+                  ? "bg-gray-800 bg-opacity-90 backdrop-blur-lg"
+                  : "bg-gray-800 bg-opacity-70 backdrop-blur-lg"
+              }`}
               onClick={() => toggleFAQ(index)}
               whileHover={{ scale: 1.03 }}
             >
@@ -88,7 +88,11 @@ const FAQ = () => {
                   animate={{ rotate: openIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  {openIndex === index ? <FaChevronUp size={18} className="text-gray-300" /> : <FaChevronDown size={18} className="text-gray-300" />}
+                  {openIndex === index ? (
+                    <FaChevronUp size={18} className="text-gray-300" />
+                  ) : (
+                    <FaChevronDown size={18} className="text-gray-300" />
+                  )}
                 </motion.span>
               </div>
               {openIndex === index && (

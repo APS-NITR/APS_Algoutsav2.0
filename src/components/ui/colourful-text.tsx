@@ -3,17 +3,13 @@ import React from "react";
 import { motion } from "motion/react";
 
 export default function ColourfulText({ text }: { text: string }) {
+  // Refined Avengers-themed dark and bold colors
   const colors = [
-    "rgb(131, 179, 32)",
-    "rgb(47, 195, 106)",
-    "rgb(42, 169, 210)",
-    "rgb(4, 112, 202)",
-    "rgb(107, 10, 255)",
-    "rgb(183, 0, 218)",
-    "rgb(218, 0, 171)",
-    "rgb(230, 64, 92)",
-    "rgb(232, 98, 63)",
-    "rgb(249, 129, 47)",
+    // "rgb(34, 211, 238)", // Medium purple
+    "rgb(37, 99, 235)",   // Dark slate blue
+    // "rgb(138, 43, 226)",  // Blue violet
+    // "rgb(75, 0, 130)",    // Indigo
+    // "rgb(139, 0, 139)",   // Dark magenta
   ];
 
   const [currentColors, setCurrentColors] = React.useState(colors);
@@ -21,13 +17,15 @@ export default function ColourfulText({ text }: { text: string }) {
 
   React.useEffect(() => {
     const interval = setInterval(() => {
-      const shuffled = [...colors].sort(() => Math.random() - 0.5);
-      setCurrentColors(shuffled);
+      // Smooth color transitions
+      const rotatedColors = [...currentColors];
+      rotatedColors.push(rotatedColors.shift()!);
+      setCurrentColors(rotatedColors);
       setCount((prev) => prev + 1);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [currentColors]);
 
   return text.split("").map((char, index) => (
     <motion.span
@@ -39,14 +37,13 @@ export default function ColourfulText({ text }: { text: string }) {
         color: currentColors[index % currentColors.length],
         y: [0, -3, 0],
         scale: [1, 1.01, 1],
-        filter: ["blur(0px)", `blur(5px)`, "blur(0px)"],
-        opacity: [1, 0.8, 1],
+        opacity: [1, 0.9, 1],
       }}
       transition={{
         duration: 0.5,
         delay: index * 0.05,
       }}
-      className="inline-block whitespace-pre font-sans font-bold text-3xl md:text-6xl "
+      className="inline-block whitespace-pre font-serif font-extrabold text-4xl md:text-7xl"
     >
       {char}
     </motion.span>
