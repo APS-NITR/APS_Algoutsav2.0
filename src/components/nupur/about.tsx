@@ -35,7 +35,7 @@ export default function About() {
         </div>
 
         <a
-          href="https://whatsapp.com/channel/0029VaEEb2d65yDL4o8Ya01k"
+          href="https://chat.whatsapp.com/J5AaMIMsK0Q6FYRRtmPrlM"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-wrap items-center gap-2 mb-10 justify-center font-semibold text-gray-500 dark:text-gray-400 mt-10 hover:underline"
