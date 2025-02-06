@@ -10,59 +10,59 @@ const Gallery: React.FC = () => {
   const images: GalleryImage[][] = [
     [
       {
-        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738334103/IMG_4301_bzzudm.jpg",
+        src: "https://res.cloudinary.com/dycajggce/image/upload/v1738850663/au-website/tcni6tr5fzdtyu0u96yx.jpg",
         alt: "gallery-photo-3",
       },
 
       {
-        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738333895/IMG_4305_zhkmsw.jpg",
+        src: "https://res.cloudinary.com/dycajggce/image/upload/v1738850661/au-website/beurqjtgrabdmzkvdi6g.jpg",
         alt: "gallery-photo-4",
       },
     ],
     [
       {
-        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738333888/ayush-18_upivj4.jpg",
+        src: "https://res.cloudinary.com/dycajggce/image/upload/v1738850662/au-website/vov4ai8zyy2umcfiwdxd.jpg",
         alt: "gallery-photo-1",
       },
       {
-        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738332642/IMG_4275_iqttw4.png",
+        src: "https://res.cloudinary.com/dycajggce/image/upload/v1738850664/au-website/rnpbetvwcliuwlebppzi.png",
         alt: "gallery-photo-2",
       },
       {
-        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738332640/IMG_20240316_175249_v1u5f8.jpg",
+        src: "https://res.cloudinary.com/dycajggce/image/upload/v1738850661/au-website/x1hzkxuxjxscpfl6ofyj.jpg",
         alt: "gallery-photo-5",
       },
       {
-        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738332638/IMG_20240317_161953_hfirlw.jpg",
+        src: "https://res.cloudinary.com/dycajggce/image/upload/v1738850661/au-website/byg1di7yw6s3tc65ahav.jpg",
         alt: "gallery-photo-6",
       },
     ],
     [
       {
-        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738334834/IMG_20240317_173611_oe7r5h.jpg",
+        src: "https://res.cloudinary.com/dycajggce/image/upload/v1738850663/au-website/xkfuz0gdqkbw9h306kwv.jpg",
         alt: "gallery-photo-7",
       },
       {
-        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738334239/kshitiz-13_o4t1ir.jpg",
+        src: "https://res.cloudinary.com/dycajggce/image/upload/v1738850664/au-website/p2zok4tuoug2lagt0ygi.jpg",
         alt: "gallery-photo-8",
       },
       {
-        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738335149/IMG_20240317_191943_cav149.jpg",
+        src: "https://res.cloudinary.com/dycajggce/image/upload/v1738850659/au-website/qgajgb7koemdtxoo01fs.jpg",
         alt: "gallery-photo-9",
       },
     ],
     [
       {
-        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738335143/IMG_20240317_191640_lzu6za.jpg",
+        src: "https://res.cloudinary.com/dycajggce/image/upload/v1738850659/au-website/co0w3ipuazdpeixyqxil.jpg",
         alt: "gallery-photo-10",
       },
       {
-        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738332619/IMG_4315_wod7g7.jpg",
+        src: "https://res.cloudinary.com/dycajggce/image/upload/v1738850659/au-website/jbvdtu5wt3shqayhfrz9.jpg",
         alt: "gallery-photo-11",
       },
       {
-        src: "https://res.cloudinary.com/dpmizx6gl/image/upload/v1738334236/kshitiz-6_xrsty0.jpg",
-        alt: "gallery-photo-11",
+        src: "https://res.cloudinary.com/dycajggce/image/upload/v1738850659/au-website/r4phdawvvknys5kitnr7.jpg",
+        alt: "gallery-photo-12",
       },
     ],
   ];
