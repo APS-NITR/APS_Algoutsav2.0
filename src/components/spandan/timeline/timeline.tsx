@@ -80,7 +80,7 @@ const TimelineCard: React.FC<CheckpointProps> = ({ checkpoint }) => (
 
 const Timeline = () => {
   return (
-    <section id="timeline" className="py-16 mt-20">
+    <section id="timeline" className="py-16 mt-20 w-[90%] mx-auto">
       <motion.h1
         variants={fadeIn('down', 'spring', 0.2, 1)}
         initial="hidden"

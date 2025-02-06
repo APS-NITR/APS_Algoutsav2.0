@@ -37,7 +37,7 @@ const AnimatedNumber = ({ value }: AnimatedNumberProps) => {
 
 const Stats = () => {
   return (
-    <div id="stats" className="w-full flex flex-col items-center justify-center mt-20 px-6 md:px-0">
+    <div id="stats" className=" flex flex-col items-center justify-center mt-20 px-6 md:px-0 w-[90%] mx-auto">
       <motion.div
         className="text-center w-full max-w-4xl"
         initial={{ opacity: 0, y: 50 }}

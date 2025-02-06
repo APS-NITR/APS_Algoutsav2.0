@@ -10,7 +10,7 @@ const words = `AlgoUtsav is an esteemed event organized by the Algorithmic and P
 export default function About() {
   return (
     <div
-      className="flex flex-col items-center justify-center h-screen w-full md:w-[90%] m-auto"
+      className="flex flex-col items-center justify-center h-screen w-full md:w-[90%] m-auto mt-10"
       id="about"
     >
       <motion.div

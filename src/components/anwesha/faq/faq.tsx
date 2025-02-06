@@ -28,7 +28,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div id="faq" className="flex justify-center mt-20 py-12 px-4">
+    <div id="faq" className="flex justify-center mt-20 py-12 px-4 w-[90%] mx-auto">
       <div className="w-full max-w-5xl flex flex-col md:flex-row items-start gap-10">
         {/* Left Section - Title & Links */}
         <div className="md:w-1/2 w-full">

@@ -12,7 +12,7 @@ const Sponsorship: React.FC = () => {
   ];
 
   return (
-    <div id="sponsers" className="w-full py-16 flex flex-col items-center justify-center">
+    <div id="sponsers" className=" py-16 flex flex-col items-center justify-center w-[90%] mx-auto">
       {/* Section Heading */}
       {/* <motion.h2
         className="text-4xl md:text-5xl font-extrabold text-white  mb-12"
